@@ -1,0 +1,305 @@
+:root {
+    --primary-Color: #566246;
+    --Sec-Color: #ADCEA1;
+    --accent-Color: #3E2A35;
+    --white: #E0D1CC;
+    --black: #1F2232;
+    --heading-font: "Lora";
+    --subheading-font: "Montserrat Alternates";
+    --body-font: "Tenor Sans";
+    --captions-font: "Caveat Brush";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--primary-Color);
+    color: var(--primary-Color);
+}
+
+nav a {
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: var(--primary-Color);
+}
+
+nav a:last-of-type {
+    color: var(--primary-Color);
+    border: 1px solid var(--primary-Color);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+
+nav a:last-of-type:hover {
+    background-color: var(--primary-Color);
+    color: var(--white);
+}
+
+span {
+    color: var(--Sec-Color);
+}
+
+#aboutourteam .container .greeting h1 {
+    color: var(--accent-Color);
+    width: 800px;
+    margin-top: 300px;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    margin-left: 500px;
+    font-weight: 200px;
+}
+
+#aboutourteam .container {
+    height: 400px;
+}
+
+#aboutourteam .container ul{
+    color: var(--accent-Color);
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    line-height: 55px;
+    margin-top: 50px;
+}
+
+#aboutourteam .container .greeting img {
+    margin-left:800px;
+    margin-top: -400px;
+}
+
+#abouttheproject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-Color);
+    color: var(--white);
+    border-radius: 30px;
+    width: 700px;
+    margin: 0 auto;
+    height: 400px;
+    box-shadow: var(--accent-Color) 0 0 100px;
+    margin-left: 50rem;
+}
+
+#abouttheproject h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    margin: 0; 
+}
+
+#abouttheproject p {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    line-height: 40px;
+    width: 80%; 
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+#abouttheproject img {
+    margin-right:1500px;
+    width:500px;
+    margin-top: -250px;
+}
+
+#connect {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: var(--accent-Color);
+    box-shadow: var(--black) 0 0 100px;
+    flex-direction: column;
+    height: 65rem;
+    vertical-align: center;
+}
+
+#connect h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+    margin-top: -5rem;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.control #connecting h3 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.control #connecting h3 a {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Sec-Color);
+}
+
+#commands h3::before, #commands h3::after{
+    content: ' --- ' ;
+}
+
+#commands li {
+    margin-top: 2rem;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    text-align: center;
+    color: var(--white);
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-Color);
+    color: var(--white);
+    border-radius: 30px;
+    width: 700px;
+    margin: 0 auto;
+    height: 250px;
+    box-shadow: var(--accent-Color) 0 0 100px;
+    margin-right: 50rem;
+    margin-top: 2rem;
+}
+
+#quiz h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    margin: 0; 
+}
+
+#quiz p a {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Sec-Color);
+}
+
+#quiz p {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    line-height: 40px;
+    width: 80%; 
+    text-align: justify;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#quiz img {
+    margin-left: 1500px;
+    margin-top: -100px;
+    width:400px;
+}
+
+#get-in-touch .container {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 50px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -75px;
+    margin-top: 6rem;
+}
+
+#get-in-touch a {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--accent-Color);
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: var(--white);
+    transition: 0.5s;
+}
+
+#get-in-touch a:hover {
+    background-color: var(--Sec-Color);
+    color: var(--black);
+}
+
+#get-in-touch h2, #get-in-touch p {
+    margin: 0;
+    font-family: var(--subheading-font);
+}
+
+#get-in-touch {
+    background-color: var(--white);
+}
+
+footer {
+    height: 400px;
+    background-color: var(--white);
+    align-items: center;
+}
+
+footer #image {
+    width: 300px;
+    margin-left: 450px;
+    margin-top: -10px;
+}
+
+footer .container p {
+    font-family: var(--body-font);
+    color: var(--black);
+    margin-left: 425px;
+    line-height: 30px;
+}
